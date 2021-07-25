@@ -537,11 +537,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.gallery .gallery-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.gallery #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -551,7 +551,7 @@ section {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.gallery #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -564,22 +564,22 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.gallery #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #8773f5;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.gallery #portfolio-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.gallery .portfolio-wrap {
   transition: 0.3s;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   z-index: 1;
 }
 
-.portfolio .portfolio-wrap::before {
+.gallery .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -592,7 +592,7 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.gallery .portfolio-wrap .portfolio-links {
   opacity: 1;
   left: 0;
   right: 0;
@@ -604,7 +604,7 @@ section {
   justify-content: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.gallery .portfolio-wrap .portfolio-links a {
   color: #fff;
   font-size: 28px;
   text-align: center;
@@ -613,23 +613,23 @@ section {
   width: 50%;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.gallery .portfolio-wrap .portfolio-links a:hover {
   background: #8773f5;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a + a {
+.gallery .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #8773f5;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.gallery .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 10;
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-links {
+.gallery .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
 }
@@ -637,7 +637,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.gallery-details {
   padding-top: 40px;
 }
 
